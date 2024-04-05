@@ -1,0 +1,85 @@
+#background{
+    font-family: lato;
+    background: linear-gradient(140deg, #009f7b, #5a0ddf, #009f7b);
+    min-height: 100vh;
+    background-size: 200% 200%;
+    animation: liquidBackground 5s ease infinite ;
+}
+#all{
+    max-width: 600px;
+    margin: auto;
+    margin-top: 3.5rem;
+
+
+}
+    
+.container{
+    display: flex;
+    justify-content: center; 
+}
+@keyframes liquidBackground {
+    0%{background-position: 0 0%; }
+    50%{background-position: 100% 100%;}
+    100%{background-position: 0 0%;}
+    
+}
+
+#logo{
+    width: 150px;
+}
+
+.social-network-logos {
+    width: 22px;
+    display: block;
+
+}
+.social-network-logos path{
+    fill: #fff;
+}
+.contacs-container{
+    background-color: rgba(255,255,255,.1);
+    margin-top: 16px;
+    border-radius: 20px;
+    height: 40px;
+    transition: all ease-in-out .1s;
+    cursor: pointer;
+}
+
+#description{
+    color: #fff;
+    text-align: center;
+}
+a[class='contacs-container']:not(:nth-child(1)), div:not(:nth-child(1)) {
+    gap: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+}
+.contacs-container:nth-child(3){
+    margin-top: 5rem;
+}
+
+#services-bottom{
+    margin-top: 30px;
+    border: 1px #fff solid;
+    border-radius: 20px;
+    padding: 7px 2rem;
+    color: #fff;
+    transition: all ease-in-out .1s;
+
+}
+
+@media (min-width: 600px) {
+    .contacs-container:hover{
+        transform: scaleX(1.02);
+        background-color: rgba(255,255,255,.2);
+    
+    }
+    #services-bottom:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+    }
+  }
