@@ -10,7 +10,6 @@
     margin: auto;
     margin-top: 3.5rem;
 
-
 }
     
 .container{
@@ -56,6 +55,8 @@ a[class='contacs-container']:not(:nth-child(1)), div:not(:nth-child(1)) {
     flex-direction: row;
     justify-content: center;
     color: #fff;
+}
+a{
     text-decoration: none;
 }
 .contacs-container:nth-child(3){
@@ -81,5 +82,12 @@ a[class='contacs-container']:not(:nth-child(1)), div:not(:nth-child(1)) {
     #services-bottom:hover{
     cursor: pointer;
     transform: scale(1.02);
+    }
+  }
+
+  @media (max-width: 600px){
+    #all{
+        margin-left: 40px;
+        margin-right: 40px;
     }
   }
