@@ -8,7 +8,7 @@
 #all{
     max-width: 600px;
     margin: auto;
-    margin-top: 3.5rem;
+    margin-top: 4rem;
 
 }
     
@@ -21,6 +21,11 @@
     50%{background-position: 100% 100%;}
     100%{background-position: 0 0%;}
     
+}
+
+@keyframes fadeIn {
+    0%{opacity: 0; transform: translateY(30px);}
+    100%{opacity: 100; transform: translateY(0);}
 }
 
 #logo{
@@ -42,6 +47,24 @@
     height: 40px;
     transition: all ease-in-out .1s;
     cursor: pointer;
+    overflow: hidden;
+    animation: fadeIn 0.5s ease-out forwards;
+}
+.contacs-container:nth-child(3){
+    opacity: 0;
+    animation-delay: 0.1s;
+}
+.contacs-container:nth-child(4){
+    opacity: 0;
+    animation-delay: 0.16s;
+}
+.contacs-container:nth-child(5){
+    opacity: 0;
+    animation-delay: 0.22s;
+}
+.contacs-container:nth-child(6){
+    opacity: 0;
+    animation-delay: 0.28s;
 }
 
 #description{
@@ -64,13 +87,15 @@ a{
 }
 
 #services-bottom{
+    opacity: 0;
     margin-top: 30px;
     border: 1px #fff solid;
     border-radius: 20px;
     padding: 7px 2rem;
     color: #fff;
     transition: all ease-in-out .1s;
-
+    animation: fadeIn 0.5s ease-out forwards;
+    animation-delay: 0.4s;
 }
 
 @media (min-width: 600px) {
