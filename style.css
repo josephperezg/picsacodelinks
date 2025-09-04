@@ -1,9 +1,10 @@
 #background{
     font-family: lato;
     background: linear-gradient(140deg, #009f7b, #5a0ddf, #009f7b);
-    min-height: 100vh;
+    height: 100vh;
     background-size: 200% 200%;
     animation: liquidBackground 5s ease infinite ;
+    overflow: hidden;
 }
 #all{
     max-width: 600px;
@@ -24,8 +25,8 @@
 }
 
 @keyframes fadeIn {
-    0%{opacity: 0; transform: translateY(30px);}
-    100%{opacity: 100; transform: translateY(0);}
+    0%{opacity: 0;}
+    100%{opacity: 100; }
 }
 
 #logo{
@@ -48,23 +49,23 @@
     transition: all ease-in-out .1s;
     cursor: pointer;
     overflow: hidden;
+    opacity: 0;
     animation: fadeIn 0.5s ease-out forwards;
 }
 .contacs-container:nth-child(3){
-    opacity: 0;
-    animation-delay: 0.1s;
+    animation-delay: 0.12s;
 }
 .contacs-container:nth-child(4){
-    opacity: 0;
+    
     animation-delay: 0.16s;
 }
 .contacs-container:nth-child(5){
-    opacity: 0;
-    animation-delay: 0.22s;
+    
+    animation-delay: 0.2s;
 }
 .contacs-container:nth-child(6){
-    opacity: 0;
-    animation-delay: 0.28s;
+    
+    animation-delay: 0.24s;
 }
 
 #description{
@@ -95,7 +96,7 @@ a{
     color: #fff;
     transition: all ease-in-out .1s;
     animation: fadeIn 0.5s ease-out forwards;
-    animation-delay: 0.4s;
+    animation-delay: 0.28s;
 }
 
 @media (min-width: 600px) {
@@ -107,6 +108,7 @@ a{
     #services-bottom:hover{
     cursor: pointer;
     transform: scale(1.02);
+    background-color: rgba(255,255,255,.1);
     }
   }
 
@@ -116,3 +118,16 @@ a{
         margin-right: 40px;
     }
   }
+  footer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    color: blanchedalmond;
+    height: 30vh;
+
+}
+footer svg{
+    width: 100px;
+    margin-bottom: 20px;
+}
